@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8650345302892188173}
   - component: {fileID: 550980575003641019}
   - component: {fileID: 5967777936774520758}
+  - component: {fileID: 1691052592883477589}
   m_Layer: 0
   m_Name: Damageable
   m_TagString: Untagged
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 2
   m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -114,7 +115,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.004331112, y: 1.1998752}
@@ -124,9 +125,21 @@ BoxCollider2D:
     oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.789073, y: 1.9406593}
   m_EdgeRadius: 0
+--- !u!114 &1691052592883477589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455236424516486953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107a4840321a23d4d85e8f8d855dabff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
