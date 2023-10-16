@@ -13,6 +13,8 @@ using UnityEngine;
     
     public int health { get { return currentHealth; }}
     int currentHealth;
+
+    int currentGold;
     
     public float timeInvincible = 2.0f;
     bool isInvincible;
@@ -24,13 +26,13 @@ using UnityEngine;
     
     Animator animator;
     Vector2 lookDirection = new Vector2(1,0);
-    
+
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        
+        currentGold = 0;
         currentHealth = maxHealth;
     }
 
@@ -87,6 +89,12 @@ using UnityEngine;
         
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
+    }
+
+    public void ChangeGold(int amount)
+    {
+        Debug.Log("Gold changed by " + amount);
+        currentGold += amount;
     }
     
     void Launch()
