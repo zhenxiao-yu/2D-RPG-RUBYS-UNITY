@@ -8,6 +8,7 @@ TagManager:
   - green portal
   - orange portal 2
   - green portal 2
+  - chest
   layers:
   - Default
   - TransparentFX
