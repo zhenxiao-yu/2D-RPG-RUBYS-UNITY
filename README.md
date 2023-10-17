@@ -8,7 +8,7 @@ Tutorial Resource Link: https://learn.unity.com/project/ruby-s-2d-rpg?uv=2020.3
 
 Completed up to Tutorial: "Cinemachine"
 
-
+EXE can be found under Build folder
 
 ##### Modifications: 
 
